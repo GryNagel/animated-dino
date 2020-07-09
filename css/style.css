@@ -1,0 +1,702 @@
+body{
+	background-image: url('../img/bodybg.jpg'); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Main div to hold all content */
+.container{
+	margin:0px auto;
+	width: 800px;
+	height: 500px;
+	margin-top: 50px;	
+	padding: 0px;
+}
+
+/* Button */
+#nav{
+	width: 100%;
+	height: 300px;
+	text-align: center; 
+	margin-top: 20px; 
+
+	/*Updated*/
+	display: flex; 
+	justify-content: center; 
+}
+
+/* HOME 1 *****************************************'''''*******************************/
+.bg{
+	position: relative;
+	z-index:-3;
+	margin-top: 0px;
+}
+
+.bg img{
+	opacity: 0;
+	animation: 19s bg; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* DINO1 *******************************************************************************/
+#dino{
+	width: 400px;
+	height: auto;
+}
+
+.dinosaur{ 
+	margin-top: -50px;
+	margin-left: -50px;
+	position: relative;
+	animation:movedino 15s;
+	animation-fill-mode: forwards;  
+	z-index: 1; 
+	width: 400px;
+	height: auto;
+}
+
+@keyframes movedino{
+	0% {left: 0px; opacity: 1;}
+	30% {left: 100px; opacity: 1;}
+	50% {left: 100px; opacity: 1;}
+	99% {left: 300px; opacity: 1;}
+	100% { left: 300px; opacity: 0;}
+}
+
+/*BUBBLE 1 *******************************************************************************/
+.welcome{
+	z-index: 2;
+	margin-left: 370px;
+	margin-top: -500px;
+	position: relative;
+}
+
+#bubble{
+	margin-right: 80px;
+}
+
+.welcome img{
+	opacity: 0;
+	animation: 4s bubble .2s forwards;
+	animation-transition: ease; 
+	animation-delay: 4s;
+}
+
+@keyframes bubble { 
+	0%{opacity: 1;}
+	10%{opacity: 1;}
+	20%{opacity: 1;}
+	30%{opacity: 1;}
+	40%{opacity: 1;}
+	50%{opacity: 1;}
+	60%{opacity: 1;}
+	70%{opacity: 1;}
+	80%{opacity: 1;}
+	95%{opacity: 0.5;}
+	100%{opacity: 0;}
+}
+
+/*TIMEMACHINE ENTRANCE ******************************************************************/
+.tm{
+	position: relative;
+	z-index: 3;
+}
+#timemachine{
+	width: 370px;
+	height: auto;
+	float: right;
+	margin-right: 30px;
+	z-index: 3; 
+	margin-top: -440px;
+}
+
+.tm img{
+	opacity: 0;
+	animation: 10s timemachine; 
+	animation-delay: 9s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes timemachine { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/*DINOHEAD ****************************************************************************/
+.dinohead{
+	z-index: 3;
+	position: relative;
+	margin-left: 627px;
+	margin-top: -235px;
+}
+
+.dinohead img{
+	opacity: 0;
+	animation: 4s dhead .2s forwards;
+	animation-transition: ease; 
+	animation-delay: 15s;
+}
+
+@keyframes dhead { 
+	0%{opacity: 1;}
+	10%{opacity: 1;}
+	20%{opacity: 1;}
+	30%{opacity: 1;}
+	40%{opacity: 1;}
+	50%{opacity: 1;}
+	60%{opacity: 1;}
+	70%{opacity: 1;}
+	80%{opacity: 1;}
+	95%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+/*BACKGROUND 1 ************************************************************************/
+.bg1{
+	position: absolute;
+	z-index:-1;
+	margin-top: -315px;
+}
+
+.bg1 img{
+	opacity: 0;
+	animation: 6s bg1; 
+	animation-delay: 19s;
+	animation-fill-mode: forwards;  
+}
+
+@keyframes bg1 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* DINO LOOKING UP ****************************************************************************/
+.dinoup{
+	position: relative;
+	z-index: 4;
+	margin-top: -340px;
+	margin-left: 20px;
+}
+
+#dino2{
+	width: 270px;
+	height: auto;
+}
+
+.dinoup img{
+	opacity: 0;
+	animation: 6s dinoup; 
+	animation-delay: 25s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes dinoup { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/*SMALL TIMEMACHINE EMPTY *********************************************************************/
+.tme{
+	position: relative;
+	z-index: 4;
+	margin-top: -210px;
+	margin-left: 550px;
+
+}
+
+#timemachinee{
+	width: 150px;
+	height: auto;
+}
+
+.tme img{
+	opacity: 0;
+	animation: 6s tme; 
+	animation-delay: 25s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes tme { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* SPEECH BUBBLE 2 ************************************************************************/
+.bubble2{
+	position: relative;
+	z-index: 4;
+	margin-top: -380px;
+	margin-left: 270px;
+
+}
+
+.bubble2 img{
+	width: 300px;
+	height: auto;
+	opacity: 0;
+	animation: 4s bubble2; 
+	animation-delay: 27s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bubble2 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* TEXTBOX 1 ********************************************************************************/
+.text{
+	position: relative;
+	z-index: 6;
+	margin-top: -247px;
+	margin-left: 410px;
+}
+
+.text img{
+	width: 400px;
+	height: auto;
+	opacity: 0;
+	animation: 6s text; 
+	animation-delay: 25s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes text { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+
+/* BACKGROUND 2 RUIN **************************************************************/
+
+.bg2{
+	position: relative;
+	z-index:-3;
+	margin-top: -315px;
+
+}
+
+
+.bg2 img{
+	opacity: 0;
+	animation: 6s bg2; 
+	animation-delay: 25s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg2 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* TIME MACHINE 2******************************************************************/
+
+#timemachine2{
+	width: 200;
+	height: auto;
+}
+
+.tm2{ 
+	opacity: 0;
+	margin-top: -400px;
+	position: relative;
+	float: right;
+	margin-right:120px;
+	animation:tmtwo 6s linear;
+	animation-delay: 19s;
+	animation-fill-mode: forwards; 
+	z-index: 1; 
+	height: auto;
+}
+
+@keyframes tmtwo{
+	0% {-moz-transform: rotate(0deg); right: 0px; opacity: 1;}
+	30% {opacity: 1;}
+	50% {-moz-transform: rotate(10deg); opacity: 1;}
+	70% {-moz-transform: rotate(-10deg); opacity: 1;}
+	99% {opacity: 1;}
+	100% {-moz-transform: rotate(-10deg); right: 300px; opacity: 0;}
+}
+
+
+
+/* BACKGROUND 3***************************************************************/
+.bg3{
+	position: absolute;
+	z-index:-1;
+	margin-top: -58px;
+}
+
+
+.bg3 img{
+	opacity: 0;
+	animation: 6s bg3; 
+	animation-delay: 31s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg3 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* TIME MACHINE 2******************************************************************/
+
+#timemachine3{
+	position: absolute;
+	width: 200;
+	height: auto;
+	z-index: 7;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.tm3{ 
+	opacity: 0;
+	margin-top: -400px;
+	position: relative;
+	float: left;
+	margin-left:120px;
+	animation:tmthree 6s linear;
+	animation-delay: 31s;
+	animation-fill-mode: forwards; 
+	z-index: 1; 
+	height: auto;
+}
+
+
+@keyframes tmthree{
+	0% {-moz-transform: rotate(0deg); left: 0px; opacity: 1;}
+	30% {opacity: 1;}
+	50% {-moz-transform: rotate(10deg); opacity: 1;}
+	70% {-moz-transform: rotate(-10deg); opacity: 1;}
+	99% {opacity: 1;}
+	100% {-moz-transform: rotate(-10deg); left: 300px; opacity: 0;}
+}
+
+/* BACKGROUND 4 ***************************************************************/
+.bg4{
+	position: absolute;
+	z-index:-1;
+	margin-top: -58px;
+}
+
+
+.bg4 img{
+	opacity: 0;
+	animation: 6s bg4; 
+	animation-delay: 37s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg4 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* DINO IN THE ALLY ***************************************************************/
+.dinoally{
+	position: absolute;
+	z-index:-1;
+	margin-top: 140px;
+	margin-left: 430px;
+}
+
+.dinoally img{
+	width: 400px;
+	height: auto;
+	opacity: 0;
+	animation: 6s dinoally; 
+	animation-delay: 37s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes dinoally { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* SPEECH BUBBLE 3***************************************************************/
+.bubble3{
+	position: absolute;
+	z-index:-1;
+	margin-top: 25px;
+	margin-left: 230px;
+}
+
+.bubble3 img{
+	width: 300px;
+	height: auto;
+	opacity: 0;
+	animation: 4s bubble3; 
+	animation-delay: 39s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bubble3{ 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* TEXTBOX 2 ***************************************************************/
+.text2{
+	position: absolute;
+	z-index:-1;
+	margin-left: -10px;
+	margin-top: -65px;
+}
+
+.text2 img{
+	width: 400px;
+	height: auto;
+	opacity: 0;
+	animation: 6s text2; 
+	animation-delay: 37s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes text2 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* BACKGROUND 5***************************************************************/
+.bg5{
+	position: absolute;
+	z-index:-1;
+	margin-left: 0px;
+	margin-top: -58px;
+}
+
+.bg5 img{
+	opacity: 0;
+	animation: 4s bg5; 
+	animation-delay: 43s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg5 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* TIMEMACHINE 4 ***************************************************************/
+.tm4{
+	position: absolute;
+	z-index: 2;
+	margin-left: 250px;
+	margin-top: 0px;
+}
+
+.tm4 img{
+	opacity: 0; 
+	animation: 4s spin;
+	animation-delay: 43s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes spin {
+	from { opacity: 1; transform: rotate(0deg); width: 400px; }
+	to { opacity: 0; transform: rotate(360deg); width: 100px; }
+}
+
+/* BACKGROUND 5***************************************************************/
+.bg5{
+	position: absolute;
+	z-index:-1;
+	margin-left: 0px;
+	margin-top: -58px;
+}
+
+
+.bg5 img{
+	opacity: 0;
+	animation: 4s bg5; 
+	animation-delay: 43s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bg5 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* HOME 2 FINAL BACKGROUND ***************************************************************/
+.finalbg{
+	position: absolute;
+	z-index:-1;
+	margin-left: 0px;
+	margin-top: -58px;
+}
+
+.finalbg img{
+	opacity: 0;
+	animation: 5s finalbg; 
+	animation-delay: 47s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes finalbg { 
+	from{ opacity: 1; } 
+	to { opacity: 1; } 
+}
+
+/* BUBBLE 4 FINAL BUBBLE ***************************************************************/
+.bubble4{
+	position: absolute;
+	z-index:-1;
+	margin-left: 300px;
+	margin-top: 0px;
+}
+
+.bubble4 img{
+	opacity: 0;
+	animation: 5s bubble4; 
+	animation-delay: 49s;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes bubble4 { 
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	20% { opacity: 1; } 	
+	30% { opacity: 1; } 
+	40% { opacity: 1; } 
+	50% { opacity: 1; } 
+	60% { opacity: 1; } 
+	99% { opacity: 1; } 	
+	100% { opacity: 0; } 	
+}
+
+/* DINO FINAL ***************************************************************/
+.finaldino{
+	position: absolute;
+	z-index:-1;
+	margin-left: -20px;
+	margin-top: 130px;
+}
+
+.finaldino img{
+	opacity: 0;
+	animation: 5s finalbg; 
+	animation-delay: 47s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes finaldino { 
+	from{ opacity: 1; } 
+	to { opacity: 1; } 
+
+
