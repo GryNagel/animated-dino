@@ -1,37 +1,58 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+
 body{
 	background-image: url('../img/bodybg.jpg'); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	margin: 0;
+	height: 100%;
+	display: grid;
+    grid-template-rows: auto max-content;
+	row-gap: 20px;
 }
 
 /* Main div to hold all content */
 .container{
-	margin:0px auto;
+	padding: 0px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 50px; 
+	display: flex;
+	justify-content: center;
+}
+
+.picture-frame{
+	position: absolute; 
 	width: 800px;
 	height: 500px;
-	margin-top: 50px;	
-	padding: 0px;
+	margin: 0px auto;
+	top: 150px;
 }
 
 /* Button */
 #nav{
 	width: 100%;
-	height: 300px;
 	text-align: center; 
-	margin-top: 20px; 
-
-	/*Updated*/
+	padding-bottom: 100px; 
 	display: flex; 
 	justify-content: center; 
 }
 
 /* HOME 1 *****************************************'''''*******************************/
 .bg{
-	position: relative;
+	position: absolute;
+	top: 0; 
 	z-index:-3;
 	margin-top: 0px;
+	width: 100%; 
+	height: 100%; 
 }
 
 .bg img{
@@ -59,10 +80,9 @@ body{
 }
 
 .dinosaur{ 
-	margin-top: -50px;
-	margin-left: -50px;
-	position: relative;
-	animation:movedino 15s;
+	bottom: 20px; 
+	position: absolute;
+	animation: movedino 15s;
 	animation-fill-mode: forwards;  
 	z-index: 1; 
 	width: 400px;
@@ -80,9 +100,9 @@ body{
 /*BUBBLE 1 *******************************************************************************/
 .welcome{
 	z-index: 2;
-	margin-left: 370px;
-	margin-top: -500px;
-	position: relative;
+	left: 420px;
+	top: 30px; 
+	position: absolute;
 }
 
 #bubble{
@@ -112,16 +132,15 @@ body{
 
 /*TIMEMACHINE ENTRANCE ******************************************************************/
 .tm{
-	position: relative;
+	position: absolute;
+	bottom: 10px; 
 	z-index: 3;
+	right: 30px; 
 }
 #timemachine{
 	width: 370px;
 	height: auto;
 	float: right;
-	margin-right: 30px;
-	z-index: 3; 
-	margin-top: -440px;
 }
 
 .tm img{
@@ -146,9 +165,9 @@ body{
 /*DINOHEAD ****************************************************************************/
 .dinohead{
 	z-index: 3;
-	position: relative;
-	margin-left: 627px;
-	margin-top: -235px;
+	position: absolute;
+	left: 627px;
+	top: 230px;
 }
 
 .dinohead img{
@@ -175,8 +194,8 @@ body{
 /*BACKGROUND 1 ************************************************************************/
 .bg1{
 	position: absolute;
+	top: 0; 
 	z-index:-1;
-	margin-top: -315px;
 }
 
 .bg1 img{
@@ -200,10 +219,10 @@ body{
 
 /* DINO LOOKING UP ****************************************************************************/
 .dinoup{
-	position: relative;
+	position: absolute;
 	z-index: 4;
-	margin-top: -340px;
-	margin-left: 20px;
+	bottom: 40px;
+	left: 20px;
 }
 
 #dino2{
@@ -232,10 +251,10 @@ body{
 
 /*SMALL TIMEMACHINE EMPTY *********************************************************************/
 .tme{
-	position: relative;
+	position: absolute;
 	z-index: 4;
-	margin-top: -210px;
-	margin-left: 550px;
+	top: 210px;
+	left: 550px;
 
 }
 
@@ -265,10 +284,10 @@ body{
 
 /* SPEECH BUBBLE 2 ************************************************************************/
 .bubble2{
-	position: relative;
+	position: absolute;
 	z-index: 4;
-	margin-top: -380px;
-	margin-left: 270px;
+	top: 20px;
+	left: 270px;
 
 }
 
@@ -295,10 +314,10 @@ body{
 
 /* TEXTBOX 1 ********************************************************************************/
 .text{
-	position: relative;
+	position: absolute;
 	z-index: 6;
-	margin-top: -247px;
-	margin-left: 410px;
+	bottom: -10px;
+	left: -10px; 
 }
 
 .text img{
@@ -326,10 +345,9 @@ body{
 /* BACKGROUND 2 RUIN **************************************************************/
 
 .bg2{
-	position: relative;
+	position: absolute;
 	z-index:-3;
-	margin-top: -315px;
-
+	top: 0; 
 }
 
 
@@ -361,11 +379,10 @@ body{
 
 .tm2{ 
 	opacity: 0;
-	margin-top: -400px;
-	position: relative;
-	float: right;
-	margin-right:120px;
-	animation:tmtwo 6s linear;
+	top: 100px;
+	position: absolute;
+	right:120px;
+	animation: tmtwo 6s linear;
 	animation-delay: 19s;
 	animation-fill-mode: forwards; 
 	z-index: 1; 
@@ -417,16 +434,13 @@ body{
 	width: 200;
 	height: auto;
 	z-index: 7;
-	margin-left: 30px;
-	margin-top: 20px;
 }
 
 .tm3{ 
 	opacity: 0;
-	margin-top: -400px;
-	position: relative;
-	float: left;
-	margin-left:120px;
+	top: 0px;
+	position: absolute;
+	left:120px;
 	animation:tmthree 6s linear;
 	animation-delay: 31s;
 	animation-fill-mode: forwards; 
@@ -448,7 +462,7 @@ body{
 .bg4{
 	position: absolute;
 	z-index:-1;
-	margin-top: -58px;
+	top: 0; 
 }
 
 
@@ -533,8 +547,8 @@ body{
 .text2{
 	position: absolute;
 	z-index:-1;
-	margin-left: -10px;
-	margin-top: -65px;
+	left: -10px;
+	bottom: -10px;
 }
 
 .text2 img{
@@ -562,8 +576,7 @@ body{
 .bg5{
 	position: absolute;
 	z-index:-1;
-	margin-left: 0px;
-	margin-top: -58px;
+	top: 0; 
 }
 
 .bg5 img{
@@ -589,8 +602,8 @@ body{
 .tm4{
 	position: absolute;
 	z-index: 2;
-	margin-left: 250px;
-	margin-top: 0px;
+	left: 250px;
+	top: 20px;
 }
 
 .tm4 img{
@@ -609,8 +622,7 @@ body{
 .bg5{
 	position: absolute;
 	z-index:-1;
-	margin-left: 0px;
-	margin-top: -58px;
+	top: 0; 
 }
 
 
@@ -637,8 +649,6 @@ body{
 .finalbg{
 	position: absolute;
 	z-index:-1;
-	margin-left: 0px;
-	margin-top: -58px;
 }
 
 .finalbg img{
@@ -657,8 +667,8 @@ body{
 .bubble4{
 	position: absolute;
 	z-index:-1;
-	margin-left: 300px;
-	margin-top: 0px;
+	left: 350px;
+	top: 40px;
 }
 
 .bubble4 img{
@@ -684,8 +694,8 @@ body{
 .finaldino{
 	position: absolute;
 	z-index:-1;
-	margin-left: -20px;
-	margin-top: 130px;
+	left: 20px;
+	bottom: 20px;
 }
 
 .finaldino img{
@@ -698,5 +708,4 @@ body{
 @keyframes finaldino { 
 	from{ opacity: 1; } 
 	to { opacity: 1; } 
-
-
+}
